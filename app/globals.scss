@@ -1,0 +1,65 @@
+@import "../styles/variables.scss";
+@import '../styles/responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Urbanist:wght@200;400;600&display=swap');
+
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include xl {
+    font-size: 56.25%;
+  }
+
+  @include lg {
+    font-size: 50%;
+  }
+
+  @include md {
+    font-size: 54%;
+  }
+
+  @include sm {
+    font-size: 50%;
+  }
+  
+}
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+}
+
+h3,
+li {
+  color: $text-dark;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+p {
+  color: $text-light;
+  line-height: 1.7;
+}

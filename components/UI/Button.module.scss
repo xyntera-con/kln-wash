@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+@import '../../styles/responsive.scss';
+
+.btn,
+.form,
+.awesome,
+.phone {
+  border: none;
+  background-color: $bg-tertiary;
+  padding: 1.3rem 1.8rem;
+  border-radius: 2.5rem;
+  color: $bg-secondary;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #06833c;
+  }
+
+  @include md {
+    .phone {
+      width: 70%;
+      padding: 2.5rem 0;
+    }
+  }
+}
+
+@include md {
+  .phone {
+    width: 70%;
+    padding: 2.5rem 0;
+  }
+}
+
+.form, .awesome {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.awesome {
+  width: 85%;
+}
+
+

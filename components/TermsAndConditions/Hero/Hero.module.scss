@@ -1,0 +1,90 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/responsive.scss";
+
+.hero__container {
+  width: 100%;
+  background-color: $bg-primary;
+  margin-bottom: 22.4rem;
+  padding-top: 19.2rem;
+
+  @include xl {
+    padding-top: 17.5rem;
+    margin-bottom: 20rem;
+  }
+
+  .hero {
+    max-width: 1116px;
+    margin: 0 auto;
+    padding: 6.4rem;
+    border-radius: 6.4rem;
+    background-color: $bg-secondary;
+    height: 44.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xl {
+      margin: 0 10rem;
+      max-width: 1240px;
+    }
+
+    @include md {
+      margin: 0 6rem;
+      flex-direction: column-reverse;
+      height: 60rem;
+    }
+
+    @include sm {
+      margin: 0 2.4rem;
+      border-radius: 3.2rem;
+    }
+
+    &__text {
+      h3 {
+        font-size: 3.6rem;
+        font-weight: 600;
+        margin-bottom: 2.4rem;
+
+        @include sm {
+          text-align: center;
+        }
+      }
+
+      .zigzag {
+        position: relative;
+        height: 1.9rem;
+        width: 22.1rem;
+
+        @include md {
+          margin: auto;
+        }
+      }
+    }
+
+    &__image {
+      position: relative;
+      width: 50%;
+      height: 40.2rem;
+      width: 31.2rem;
+
+      @include md {
+        width: 31.2rem;
+        height: 100%;
+        margin-bottom: 3.2rem;
+      }
+
+      @include sm {
+        height: 30rem;
+      }
+
+      .list__image {
+        position: absolute;
+        transform: translate(-15%, 15%);
+
+        @include md {
+          transform: translate(0, 0);
+        }
+      }
+    }
+  }
+}

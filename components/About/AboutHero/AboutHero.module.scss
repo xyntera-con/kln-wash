@@ -1,0 +1,144 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/responsive.scss";
+
+.about__hero__container {
+  width: 100%;
+  background-color: $bg-primary;
+  padding-top: 19.2rem;
+  margin-bottom: 10rem;
+
+  @include xl {
+    padding-top: 17.5rem;
+    margin-bottom: 9rem;
+  }
+
+  .about__hero {
+    max-width: 1116px;
+    margin: 0 auto;
+    padding: 6.4rem;
+    border-radius: 6.4rem;
+    background-color: $bg-secondary;
+    height: 44.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xl {
+      margin: 0 10rem;
+      max-width: 1240px;
+    }
+
+    @include md {
+      margin: 0 6rem;
+      flex-direction: column-reverse;
+    }
+
+    @include sm {
+      margin: 0 2.4rem;
+      height: 45rem;
+      border-radius: 3.2rem;
+    }
+
+    &__left {
+      .texts {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 2.4rem;
+
+        h3 {
+          font-size: 4.8rem;
+          font-weight: 600;
+        }
+
+        .us {
+          color: #ffa401;
+        }
+      }
+
+      .zigzag {
+        position: relative;
+        height: 1.9rem;
+        width: 22.1rem;
+      }
+    }
+
+    .images {
+      width: 60%;
+      height: 100%;
+      position: relative;
+
+      @include md {
+        height: 30rem;
+        width: 40rem;
+        min-width: 30rem;
+      }
+
+      .illustration {
+        position: relative;
+        width: 57rem;
+        height: 38.5rem;
+        position: absolute;
+        top: -60%;
+        right: 48%;
+        transform: translate(50%, 50%);
+
+        @include md {
+          width: 30.2rem;
+          top: -85%;
+          height: 24.2rem;
+        }
+      }
+
+      .shield {
+        position: relative;
+        height: 17rem;
+        width: 17rem;
+        position: absolute;
+        left: -18%;
+        top: 15%;
+        transform: translate(50%, 50%);
+
+        @include md {
+          width: 7.5rem;
+          top: 5%;
+          left: 3%;
+          height: 7.5rem;
+        }
+      }
+
+      .star {
+        position: relative;
+        height: 6.4rem;
+        width: 6.4rem;
+        position: absolute;
+        top: -15%;
+        left: 25%;
+        transform: translate(50%, 50%);
+
+        @include md {
+          width: 3.1rem;
+          top: -30%;
+          left: 30%;
+          height: 3.1rem;
+        }
+      }
+
+      .calendar {
+        position: relative;
+        height: 7.65rem;
+        width: 7.65rem;
+        position: absolute;
+        right: 10%;
+        top: -5%;
+        transform: translate(50%, 50%);
+
+        @include md {
+          width: 3.7rem;
+          top: -15%;
+          right: 15%;
+          height: 3.7rem;
+        }
+      }
+    }
+  }
+}

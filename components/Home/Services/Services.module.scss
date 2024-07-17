@@ -1,0 +1,71 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/responsive.scss";
+
+.services__container {
+  width: 100%;
+  margin-bottom: 6.4rem;
+
+  @include sm {
+
+  }
+
+  .services {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url("/landing/gray-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include md {
+      background-size: contain;
+    }
+
+    @include sm {
+    margin:  0 2.4rem;
+    }
+
+    .services__container_inner {
+      text-align: center;
+      width: 52.5%;
+      margin: 0 auto;
+      position: relative;
+
+      @include md {
+        width: 80%;
+      }
+
+      @include sm {
+        width: 100%;
+      }
+
+      .star {
+        margin-bottom: 1.6rem;
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 2.2rem;
+        margin-bottom: 1.6rem;
+      }
+
+      .zigzag {
+        margin-bottom: 1.6rem;
+        position: relative;
+        height: 1.9rem;
+        width: 22.1rem;
+
+        @include lg {
+          width: 18rem;
+          margin: auto;
+          margin-bottom: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
